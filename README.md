@@ -37,7 +37,7 @@ The model is structured around four interconnected sheets, driven by a single sc
 9. **LCR** — Liquidity Coverage Ratio per CRR2 / Delegated Regulation EU 2022/786; HQLA haircuts, outflow rates
 10. **NSFR** — Net Stable Funding Ratio per CRR Art. 428a–428at; ASF/RSF weights, trading book RSF
 11. **CET1 / RWA** — Common Equity Tier 1 ratio bridge; RWA by risk type; capital buffer analysis
-12. **Scenario Manager** — Three scenarios (Base / Adverse / Severe) with rate, growth, and credit shock parameters
+12. **Scenario Manager** — Four scenarios (Base / Rate Hike / Rate Cut / Stress) with rate, growth, and credit shock parameters
 13. **IRRBB Summary** — IRRBB outlier test; EVE/Tier 1 and NII/Tier 1 limits per EBA/GL/2022/14
 14. **Stress Testing** — Combined rate + credit + liquidity stress; capital adequacy under combined shock
 15. **ALCO Pack** — Formatted summary for ALCO-style reporting; scenario comparison table
@@ -48,11 +48,11 @@ The model is structured around four interconnected sheets, driven by a single sc
 
 Three scenarios are controlled from a single dropdown on the Dashboard. The selection writes to `Engine!C7`, which all downstream CHOOSE formulas reference. No sheet has an independent selector.
 
-| Scenario | Rate Assumption | Loan Growth | Credit Shock |
-|---|---|---|---|
-| Base | ECB holds 2.00%; Euribor = DFR + 10bps | Moderate | None |
-| Adverse | +200bps parallel shift | Compressed | +40bps NPL |
-| Severe | -100bps (floor applied) | Negative | +80bps NPL |
+Scenario	Description
+Base	Stable rate environment with moderate loan and deposit growth
+Rate Hike	+200bps shock with slower growth, higher deposit beta, and slightly weaker credit quality
+Rate Cut	-200bps shock with stronger growth, lower deposit beta, and lower credit cost
+Stress	+300bps stress with weak loan growth, flat deposits, high deposit beta, and materially higher credit cost
 
 ---
 
