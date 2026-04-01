@@ -89,7 +89,6 @@ To ensure internal consistency and robustness, the model was tested across all s
 - Balance sheet identity verified across all forecast periods (Assets = Liabilities + Equity)
 - Scenario selector tested across all 4 scenarios with full propagation through NII, EVE, LCR, NSFR, and CET1
 - Key regulatory ratios recalculated after each scenario switch to confirm stability
-- Monthly NII reconciled to annual NII within acceptable variance
 - No hardcoded values in calculation chains; all outputs are formula-driven
 
 ## Data Source
