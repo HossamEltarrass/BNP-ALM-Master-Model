@@ -82,6 +82,15 @@ Four scenarios are controlled from a single dropdown on the Dashboard. The selec
 **Formula color conventions** — blue font for hardcoded inputs, black for formula cells, green (#006B42 / #00915A) for headers and cross-sheet references. The only acceptable hardcoded value is the 2024A NII actual in the NIM trend section.
 
 ---
+## Model Validation
+
+To ensure internal consistency and robustness, the model was tested across all scenarios with the following checks:
+
+- Balance sheet identity verified across all forecast periods (Assets = Liabilities + Equity)
+- Scenario selector tested across all 4 scenarios with full propagation through NII, EVE, LCR, NSFR, and CET1
+- Key regulatory ratios recalculated after each scenario switch to confirm stability
+- Monthly NII reconciled to annual NII within acceptable variance
+- No hardcoded values in calculation chains; all outputs are formula-driven
 
 ## Data Source
 
