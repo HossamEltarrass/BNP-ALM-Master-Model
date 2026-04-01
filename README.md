@@ -46,13 +46,14 @@ The model is structured around four interconnected sheets, driven by a single sc
 
 ## Scenario Framework
 
-Three scenarios are controlled from a single dropdown on the Dashboard. The selection writes to `Engine!C7`, which all downstream CHOOSE formulas reference. No sheet has an independent selector.
+Four scenarios are controlled from a single dropdown on the Dashboard. The selection writes to `Engine!C7`, which all downstream CHOOSE formulas reference. No sheet has an independent selector.
 
-Scenario	Description
-Base	Stable rate environment with moderate loan and deposit growth
-Rate Hike	+200bps shock with slower growth, higher deposit beta, and slightly weaker credit quality
-Rate Cut	-200bps shock with stronger growth, lower deposit beta, and lower credit cost
-Stress	+300bps stress with weak loan growth, flat deposits, high deposit beta, and materially higher credit cost
+| Scenario | Description |
+|---|---|
+| Base | Stable rate environment with moderate loan and deposit growth |
+| Rate Hike | +200bps shock with slower growth, higher deposit beta, and slightly weaker credit quality |
+| Rate Cut | -200bps shock with stronger growth, lower deposit beta, and lower credit cost |
+| Stress | +300bps stress with weak loan growth, flat deposits, high deposit beta, and materially higher credit cost |
 
 ---
 
