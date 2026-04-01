@@ -119,7 +119,7 @@ This model is the foundation for a series of Python-based ALM tools that consume
 | Full ALM Dashboard | Interactive Python/Dash ALM reporting interface | Yes |
 | Bond Pricing & Duration Calculator | PVBP, DV01, convexity, modified duration | No |
 | ECB Policy & Banking Impact Analyzer | Macro scenario overlay and policy transmission model | No |
-| SQL Banking Sector Analysis | Sector benchmarking using public bank disclosures | No |
+
 
 ---
 
